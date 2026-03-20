@@ -1,0 +1,38 @@
+# 依赖（体积大、可 npm install 恢复）
+node_modules
+
+# Next.js 构建输出与缓存（勿提交）
+.next
+
+out
+
+# 测试 / 覆盖率
+coverage
+.nyc_output
+
+# 环境变量（常含密钥；可提交 .env.example 作模板）
+.env
+.env*.local
+
+# 日志与调试
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# 系统与编辑器（可选，团队常统一忽略）
+.DS_Store
+*.pem
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# TypeScript 增量构建缓存
+*.tsbuildinfo
+
+# Vercel
+.vercel
+
+# Sentry build plugin（含 SENTRY_AUTH_TOKEN，切勿提交）
+.sentryclirc
+.env.sentry-build-plugin
